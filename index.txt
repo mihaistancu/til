@@ -1,0 +1,12 @@
+2024-12-23
+
+Renaming a remote branch in git 
+
+(bash script)
+
+REPO_NAME=""
+
+git checkout "$REPO_NAME"
+git branch -m "archive/$REPO_NAME"
+git push origin "archive/$REPO_NAME"
+git push origin --delete "$REPO_NAME"
